@@ -1,5 +1,5 @@
 public class Primes {
-    public static void main(String[] args) {
+    public static void main(String[] args) {                     // build: ctrl, shift, f10
         int counter = 0;
         for (int number = 2; number <= 21; number++) {
             boolean divisible = false;
@@ -19,3 +19,11 @@ public class Primes {
         }
     }
 }
+
+
+
+
+
+
+
+
