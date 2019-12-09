@@ -22,7 +22,10 @@ public class Sum {
                 successfully_loaded = true;
             }
         }
-        // TODO
-        System.out.println("Sum is " + Integer.toString(target));
+        Integer sum = 0;
+        for (int i = 1; i <= target; i++) {
+            sum += i;
+        }
+        System.out.println("Sum is " + Integer.toString(sum));
     }
 }
