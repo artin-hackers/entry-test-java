@@ -9,11 +9,12 @@ public class Primes {
                     divisible = true;
                 }
             }
-            if (!divisible) {
+            if (divisible) {
                 counter += 1;
             }
             if (counter == 6) {
                 System.out.println(number);
+                System.out.println("tohle je tvoje cislo");
                 break;
             }
         }
