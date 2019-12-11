@@ -1,5 +1,5 @@
 public class Primes {
-    public static void main(String[] args) {                     // build: ctrl, shift, f10
+    public static void main(String[] args) {
         int counter = 0;
         for (int number = 2; number <= 21; number++) {
             boolean divisible = false;
@@ -9,7 +9,7 @@ public class Primes {
                     divisible = true;
                 }
             }
-            if (divisible) {
+            if (!divisible) {
                 counter += 1;
             }
             if (counter == 6) {
