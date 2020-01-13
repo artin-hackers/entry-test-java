@@ -8,24 +8,24 @@ public class Fibonacci {
         System.out.print("Please enter high limit: ");
         String highLimitStr = scanner.nextLine();
 
-        Integer lowLimit = Integer.parseInt(lowLimitStr);
-        Integer highLimit = Integer.parseInt(highLimitStr);
+        int lowLimit = Integer.parseInt(lowLimitStr);
+        int highLimit = Integer.parseInt(highLimitStr);
 
         if (highLimit < lowLimit) {
             System.out.println("Error: High limit must be the same or higher number than low limit");
             System.exit(-1);
         }
-        else if (lowLimit <= 0 || highLimit <= 0) {
+        else if (lowLimit <= 0) {
             System.out.println("Error: Both limits must be higher than 0");
             System.exit(-1);
         }
 
         System.out.println("You entered limit <" + lowLimitStr + ", " + highLimitStr + ">");
 
-        Integer lastLast = 0;
-        Integer last = 1;
+        int lastLast = 0;
+        int last = 1;
         for (int i = 3; i <= highLimit; i++) {
-            Integer current = last + lastLast;
+            int current = last + lastLast;
             if (i >= lowLimit) {
                 System.out.println(i + ". " + current);
             }
