@@ -11,22 +11,26 @@ public class palindrom {
     text = Integer.toString(number);
 
 
-    if (text.charAt(0) ==text.charAt(3)){
-    System.out.println("true");
-    }
-    else {
-        System.out.println("false");
-        return;
-    }
-
-    if (text.charAt(1) ==text.charAt(2)){
-    System.out.println("true2");
-    }
-    else {
-        System.out.println("false2");
-        return;
-    }
+        checkpalindrom(text);
 
 
+    }
+
+    private static void checkpalindrom(String text) {
+        if (text.charAt(0) ==text.charAt(3)){
+        System.out.println("true");
+        }
+        else {
+            System.out.println("false");
+            return;
+        }
+
+        if (text.charAt(1) ==text.charAt(2)){
+        System.out.println("true2");
+        }
+        else {
+            System.out.println("false2");
+            return;
+        }
     }
 }
