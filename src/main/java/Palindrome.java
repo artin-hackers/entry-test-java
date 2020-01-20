@@ -3,7 +3,7 @@ public class Palindrome {
         int a;
         int b;
 
-        a = 91;
+        a = 90;
         b = 99;
 
         int multiple;
@@ -27,15 +27,11 @@ public class Palindrome {
     }
 
     private static boolean checkPalindrome(String multipleString) {
-        if (multipleString.charAt(0) == multipleString.charAt(3)) {
-        }
-        else {
+        if (multipleString.charAt(0) != multipleString.charAt(3)) {
             return false;
         }
 
-        if (multipleString.charAt(1) == multipleString.charAt(2)) {
-        }
-        else {
+        if (multipleString.charAt(1) != multipleString.charAt(2)) {
             return false;
         }
         return true;
