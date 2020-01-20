@@ -3,7 +3,7 @@ public class Palindrome {
         int a;
         int b;
 
-        a = 90;
+        a = 91;
         b = 99;
 
         int multiple;
@@ -15,29 +15,29 @@ public class Palindrome {
         multipleString = Integer.toString(multiple);
 
         System.out.println(multipleString);
-        if (checkPalindrome(multipleString)) return;
+
+        if (checkPalindrome(multipleString)) {
+            System.out.println("The number " + multiple + " is a palindrome.");
+        }
+        else {
+            System.out.println("The number " + multiple + " is NOT a palindrome.");
+        }
 
         System.out.println("Finished");
     }
 
     private static boolean checkPalindrome(String multipleString) {
-        // Check palindrome - Level 1
         if (multipleString.charAt(0) == multipleString.charAt(3)) {
-            System.out.println("Level 1 - Match");
         }
         else {
-            System.out.println("Level 1 - Difference");
-            return true;
+            return false;
         }
 
-        // Check palindrome - Level 2
         if (multipleString.charAt(1) == multipleString.charAt(2)) {
-            System.out.println("Level 2 - Match");
         }
         else {
-            System.out.println("Level 2 - Difference");
-            return true;
+            return false;
         }
-        return false;
+        return true;
     }
 }
