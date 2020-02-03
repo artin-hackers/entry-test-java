@@ -2,17 +2,17 @@ public class palindrom {
     public static void main(String[] args) {
         //   System.out.println("Hello world");
 
-        int x = 91;
-        int i = 99;
-        int number;
-        number = x * i;
-        System.out.println(number);
-        String text;
-        text = Integer.toString(number);
+        for (int i = 1000; i <=9999; i++) {
+            String string;
+            string = Integer.toString(i);
+            if (checkpalindrom(string) == true) {
+                System.out.println(string);
+            }
+        }
 
-      System.out.println(checkpalindrom(text));
+    //if()
 
-        checkpalindrom(text);
+
 
 
     }
